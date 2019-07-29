@@ -1,7 +1,4 @@
 <!-- Put the HTML template for your page here! -->
-
-<DOCTYPE html>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,10 +7,22 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
-<body class="body">
+<body class="chicken">
 
-<h1>CHEESEBURGERS!!!</h1>
-<p>its just my favorite food idk. i like its taste OK?!!??!?111?</p>
+	<h1>CHEESEBURGERS!!!</h1>
+	<p>its just my favorite food idk. i like its taste OK?!!??!?111?</p>
+
+	<h2>fooood</h2>
+	<ul>
+		{% for food in fav_food %}
+		<li>{{food}}</li>
+		{% endfor %}
+		
+
+
+
+	</ul>
+		}
 
 </body>
 </html>
